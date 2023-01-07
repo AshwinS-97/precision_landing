@@ -58,3 +58,22 @@ calibration_matrix1.npy
 distortion_coefficients1.npy
 
 This matrix is used in the script of AruCO detection
+
+## Hardware parameter tuning for NO_GPS mode Using QGroundControl
+```param
+ARMING_GPS_USE DISABLED
+AHRS_GPS_USE DISABLED
+EK3_SRC1_POSXY None
+EK3_SRC1_VELXY None
+EK3_SRC1_VELZ None
+COMPASS_USE DISABLED
+COMPASS_USE2 DISABLED
+COMPASS_USE3 DISABLED
+```
+## Detecting Pose from AruCO marker
+Run the following script to detect the pose of the drone using AruCO marker
+
+```python3
+cd Onboard-pi
+python3 script.py
+```
